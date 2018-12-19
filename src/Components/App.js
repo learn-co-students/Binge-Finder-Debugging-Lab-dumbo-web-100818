@@ -17,14 +17,14 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    Adapter.getShows().then(shows => this.setState({shows}))
+   Adapter.getShows().then(shows => this.setState({shows}))
   }
 
   componentDidUpdate = () => {
     window.scrollTo(0, 0)
   }
 
-  handleSearch (e){
+  handleSearch =(e)=>{
     this.setState({ searchTerm: e.target.value.toLowerCase() })
   }
 
